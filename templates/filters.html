@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+<h1>Пошук результатів ЗНО</h1>
+<form action="/test_submit" name="simple" method="post">
+
+<h3>Область:</h3>
+<select name="region">
+<option value="any">будь-яка</option>
+<option value="Автономна Республіка Крим">АР Крим</option>
+<option value="Вінницька область">Вінницька</option>
+<option value="Волинська область">Волинська</option>
+<option value="Дніпропетровська область">Дніпропетровська</option>
+<option value="Донецька область">Донецька</option>
+<option value="Житомирська область">Житомирська</option>
+<option value="Закарпатська область">Закарпатська</option>
+<option value="Запорізька область">Запорізька</option>
+<option value="Івано-Франківська область">Івано-Франківська</option>
+<option value="Київська область">Київська</option>
+<option value="Кіровоградська область">Кіровоградська</option>
+<option value="Луганська область">Луганська</option>
+<option value="Львівська область">Львівська</option>
+<option value="Миколаївська область">Миколаївська</option>
+<option value="Одеська область">Одеська</option>
+<option value="Полтавська область">Полтавська</option>
+<option value="Рівненська область">Рівненська</option>
+<option value="Сумська область">Сумська</option>
+<option value="Тернопільська область">Тернопільська</option>
+<option value="Харківська область">Харківська</option>
+<option value="Херсонська область">Херсонська</option>
+<option value="Хмельницька область">Хмельницька</option>
+<option value="Черкаська область">Черкаська</option>
+<option value="Чернівецька область">Чернівецька</option>
+<option value="Чернігівська область">Чернігівська</option>
+</select>
+
+
+<h3>Район/місто:</h3>
+<input type="text" name="area">
+
+
+<h3>Школа:</h3>
+<input type="text" name="school__name">
+<select name="school__type">
+<option value="any">будь-яка</option>
+<option value="середня загальноосвітня школа">середня загальноосвітня</option>
+<option value="спеціалізована школа">спеціалізована</option>
+<option value="ліцей">ліцей</option>
+<option value="гімназія">гімназія</option>
+<option value="колегіум">колегіум</option>
+</select>
+
+
+<h3>Рік проведення:</h3>
+<select name="year">
+<option value="any">будь-який</option>
+<option value=2010>2010</option>
+<option value=2011>2011</option>
+<option value=2012>2012</option>
+<option value=2013>2013</option>
+<option value=2014>2014</option>
+</select>
+
+<h3>Предмет:</h3>
+<select name="subject">
+<option value="any">будь-який</option>
+<option value="Українська мова та література">Українська мова та література</option>
+<option value="Історія України">Історія України</option>
+<option value="Математика">Математика</option>
+<option value="Фізика">Фізика</option>
+<option value="Хімія">Хімія</option>
+<option value="Біологія">Біологія</option>
+<option value="Географія">Географія</option>
+<option value="Англійська мова">Англійська мова</option>
+<option value="Французька мова">Французька мова</option>
+<option value="Німецька мова">Німецька мова</option>
+<option value="Іспанська мова">Іспанська мова</option>
+<option value="Російська мова">Російська мова</option>
+<option value="Всесвітня історія">Всесвітня історія</option>
+<option value="Світова література">Світова література</option>
+</select>
+<br><br>
+
+
+<input type="radio" name="output" value="json" >JSON
+<br>
+<input type="radio" name="output" value="table" checked>Таблиця
+<br><br>
+
+
+<input type="submit" value="Пошук">
+
+</form>
+
+</body>
+</html>

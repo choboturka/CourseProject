@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+<div class='matplotlib'>
+ <img src="static/temp/{{plotPng}}">
+</div>
+<br>
+
+
+
+<table>
+<th>Місце</th>
+<th>Школа</th>
+<th>Рік</th>
+<th>Предмет</th>
+<th>Кількість учнів</th>
+<th>100-123.5</th>
+<th>124-135.5</th>
+<th>136-150</th>
+<th>150.5-161.5</th>
+<th>162-172.5</th>
+<th>173-183</th>
+<th>183.5-190</th>
+<th>190.5-195</th>
+<th>195.5-199.5</th>
+<th>200</th>
+
+
+
+
+
+{%for ob in objects %}
+<tr>
+
+<td>{{ob.school.location}}</td>
+<td>{{ob.school.name}}</td>
+<td>{{ob.year}}</td>
+<td>{{ob.subject}}</td>
+<td>{{ob.students}}</td>
+<td>{{ob.scores[0]}}</td>
+<td>{{ob.scores[1]}}</td>
+<td>{{ob.scores[2]}}</td>
+<td>{{ob.scores[3]}}</td>
+<td>{{ob.scores[4]}}</td>
+<td>{{ob.scores[5]}}</td>
+<td>{{ob.scores[6]}}</td>
+<td>{{ob.scores[7]}}</td>
+<td>{{ob.scores[8]}}</td>
+<td>{{ob.scores[9]}}</td>
+
+
+
+
+</tr>
+{% endfor %}
+</table>
+
+</body>
+</html>
